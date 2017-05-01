@@ -24,7 +24,9 @@ namespace WorkingWithVisualStudio
         {
             loggerFactory.AddConsole();
 
+            app.UseDeveloperExceptionPage();
             app.UseMvcWithDefaultRoute();
+            app.UseBrowserLink();
 
             if (env.IsDevelopment())
             {
