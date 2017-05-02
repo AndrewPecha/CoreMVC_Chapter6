@@ -25,8 +25,9 @@ namespace WorkingWithVisualStudio
             loggerFactory.AddConsole();
 
             app.UseDeveloperExceptionPage();
-            app.UseMvcWithDefaultRoute();
             app.UseBrowserLink();
+            app.UseStaticFiles();
+            app.UseMvcWithDefaultRoute();
 
             if (env.IsDevelopment())
             {
